@@ -20,8 +20,10 @@ class TextBlock extends React.Component {
 
         return (
             <div>
-                <label>Title: <input type="text" name="title" value={title} onChange={(e) => this.handleChange({ title: e.target.value })} /></label>
-                <label>Body: <textarea name="body" value={body}  onChange={(e) => this.handleChange({ body: e.target.value })}></textarea></label>
+                <div className="form-group">
+                    <label>Title:</label><input className="form-control" type="text" name="title" value={title} onChange={(e) => this.handleChange({ title: e.target.value })} />
+                    <label>Body:</label><textarea name="body" value={body} className="form-control" onChange={(e) => this.handleChange({ body: e.target.value })}></textarea>
+                </div>
             </div>
         )
     }

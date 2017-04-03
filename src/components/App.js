@@ -28,7 +28,7 @@ export default class App extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="constrain">
                 <div>
                     <ArticleBuilderComponent
                         article={this.state.article}
